@@ -1,0 +1,83 @@
+
+Host Name:                 STURNNER
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.19045 N/A Build 19045
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          hp
+Registered Organization:   
+Product ID:                00330-80000-00000-AA322
+Original Install Date:     2/14/2022, 3:32:21 AM
+System Boot Time:          6/3/2026, 10:29:07 AM
+System Manufacturer:       Hewlett-Packard
+System Model:              HP EliteBook Folio 9480m
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 69 Stepping 1 GenuineIntel ~2601 Mhz
+BIOS Version:              Hewlett-Packard M85 Ver. 01.34, 1/18/2016
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+01:00) West Central Africa
+Total Physical Memory:     8,041 MB
+Available Physical Memory: 3,021 MB
+Virtual Memory: Max Size:  15,899 MB
+Virtual Memory: Available: 9,197 MB
+Virtual Memory: In Use:    6,702 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\STURNNER
+Hotfix(s):                 36 Hotfix(s) Installed.
+                           [01]: KB5066130
+                           [02]: KB5031988
+                           [03]: KB5000736
+                           [04]: KB5011048
+                           [05]: KB5015684
+                           [06]: KB5072653
+                           [07]: KB5071959
+                           [08]: KB5032392
+                           [09]: KB5032907
+                           [10]: KB5034224
+                           [11]: KB5036447
+                           [12]: KB5037018
+                           [13]: KB5037240
+                           [14]: KB5037995
+                           [15]: KB5039336
+                           [16]: KB5040565
+                           [17]: KB5041579
+                           [18]: KB5041581
+                           [19]: KB5043935
+                           [20]: KB5043130
+                           [21]: KB5046823
+                           [22]: KB5050388
+                           [23]: KB5050111
+                           [24]: KB5052916
+                           [25]: KB5054682
+                           [26]: KB5055663
+                           [27]: KB5058526
+                           [28]: KB5059504
+                           [29]: KB5061902
+                           [30]: KB5063706
+                           [31]: KB5063261
+                           [32]: KB5063979
+                           [33]: KB5066411
+                           [34]: KB5066790
+                           [35]: KB5071982
+                           [36]: KB5000858
+Network Card(s):           3 NIC(s) Installed.
+                           [01]: Intel(R) Dual Band Wireless-N 7260
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     172.20.10.1
+                                 IP address(es)
+                                 [01]: 172.20.10.6
+                           [02]: Intel(R) Ethernet Connection I218-LM
+                                 Connection Name: Ethernet
+                                 Status:          Media disconnected
+                           [03]: Bluetooth Device (Personal Area Network)
+                                 Connection Name: Bluetooth Network Connection
+                                 Status:          Media disconnected
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
