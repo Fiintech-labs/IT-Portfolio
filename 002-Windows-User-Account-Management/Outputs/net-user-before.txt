@@ -1,0 +1,8 @@
+
+User accounts for \\STURNNER
+
+-------------------------------------------------------------------------------
+Administrator            DefaultAccount           Guest                    
+hp                       WDAGUtilityAccount       
+The command completed successfully.
+
