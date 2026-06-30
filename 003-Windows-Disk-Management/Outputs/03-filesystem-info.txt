@@ -1,0 +1,24 @@
+Volume Name : 
+Volume Serial Number : 0xca03b5c0
+Max Component Length : 255
+File System Name : NTFS
+Is ReadWrite
+Not Thinly-Provisioned
+Supports Case-sensitive filenames
+Preserves Case of filenames
+Supports Unicode in filenames
+Preserves & Enforces ACL's
+Supports file-based Compression
+Supports Disk Quotas
+Supports Sparse files
+Supports Reparse Points
+Returns Handle Close Result Information
+Supports POSIX-style Unlink and Rename
+Supports Object Identifiers
+Supports Encrypted File System
+Supports Named Streams
+Supports Transactions
+Supports Hard Links
+Supports Extended Attributes
+Supports Open By FileID
+Supports USN Journal
