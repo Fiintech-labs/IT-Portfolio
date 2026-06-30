@@ -117,6 +117,7 @@ Identify the file system used by the Windows operating system partition.
 ### Result
 
 Confirmed that the Windows operating system partition is formatted using the NTFS file system.
+
 ---
 
 ## Task 4 — Perform a Disk Health Check
