@@ -62,6 +62,9 @@ README.md
 
 ---
 
-## Next Project
+## Related Projects
 
-**004 – Windows Computer Management**
+- 001 – Windows Workstation System Audit
+- 002 – Windows User Account Management 
+- 003 – Windows Disk Management 
+- 004 – Windows Computer Management *(Next Project)*

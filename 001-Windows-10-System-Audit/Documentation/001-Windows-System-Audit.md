@@ -50,11 +50,9 @@ Identify the workstation name and currently logged-in user.
 
 **Screenshots**
 
-<img src="../Screenshots/01-command-prompt-audit1.png" width="700">
+<img src="../Screenshots/01-hostname.png" width="700">
 
-<img src="../Screenshots/01-command-prompt-audit2.png" width="700">
-
-<img src="../Screenshots/01-command-prompt-audit3.png" width="700">
+<img src="../Screenshots/01-whoami.png" width="700">
 
 ### Result
 
@@ -136,9 +134,7 @@ Collect the workstation network configuration.
 
 **Screenshots**
 
-<img src="../Screenshots/01-command-prompt-audit2.png" width="700">
-
-<img src="../Screenshots/01-command-prompt-audit3.png" width="700">
+<img src="../Screenshots/04-network-config.png" width="700">
 
 ### Result
 
@@ -166,7 +162,7 @@ Identify all local user accounts configured on the workstation.
 
 **Screenshot**
 
-<img src="../Screenshots/01-command-prompt-audit3.png" width="700">
+<img src="../Screenshots/05-net-user.png" width="700">
 
 ### Result
 
@@ -234,7 +230,7 @@ README.md
 
 ## Project Documentation
 
-<img src="../Screenshots/04-vscode-documentation.png" width="700">
+<img src="../Screenshots/06-vscode-documentation.png" width="700">
 
 ---
 
