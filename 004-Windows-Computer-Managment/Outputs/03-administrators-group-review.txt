@@ -1,0 +1,10 @@
+Alias name     administrators
+Comment        Administrators have complete and unrestricted access to the computer/domain
+
+Members
+
+-------------------------------------------------------------------------------
+Administrator
+hp
+The command completed successfully.
+

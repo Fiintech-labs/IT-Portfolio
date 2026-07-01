@@ -32,11 +32,14 @@ This repository documents the design, deployment, administration, and troublesho
 | ✅ | 001 – Windows Workstation System Audit | Audit a newly deployed employee workstation |
 | ✅ | 002 – Windows User Account Management | Create and manage local employee accounts |
 | ✅ | 003 – Windows Disk Management | Review storage before workstation deployment |
-| 🚧 | 004 – Windows Computer Management | Configure local administration tools |
-| ⏳ | 005 – Windows Services Management | Troubleshoot Windows services |
-| ⏳ | 006 – Device Manager & Driver Troubleshooting | Resolve hardware-related issues |
-| ⏳ | 007 – Event Viewer Investigation | Diagnose workstation problems |
-| ⏳ | 008 – Task Scheduler & Startup Optimization | Improve workstation performance |
+| ✅ | 004 – Windows Computer Management | Verify workstation administrative configuration |
+| 🚧 | 005 – Windows Event Viewer Investigation | Investigate a workstation boot failure using Event Viewer |
+| ⏳ | 006 – Network Configuration & Connectivity Troubleshooting | Restore network connectivity for an employee workstation |
+| ⏳ | 007 – Device Manager & Driver Troubleshooting | Resolve hardware and driver-related issues |
+| ⏳ | 008 – Windows Services Troubleshooting | Restore a failed business application by diagnosing Windows services |
+| ⏳ | 009 – Windows Update & Patch Management | Verify and install security updates on employee workstations |
+| ⏳ | 010 – Remote Support & Remote Desktop | Provide remote technical support to end users |
+
 
 ---
 
