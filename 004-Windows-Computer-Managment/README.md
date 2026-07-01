@@ -81,4 +81,4 @@ Full project documentation is available in:
 - 001 – Windows Workstation System Audit
 - 002 – Windows User Account Management
 - 003 – Windows Disk Management
-- 005 – Windows Services Management *(Next Project)*
+- 005 – Windows Event Viewer Investigation *(Next Project)*

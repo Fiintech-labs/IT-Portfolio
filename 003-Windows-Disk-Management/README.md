@@ -1,4 +1,4 @@
-# 003 – Windows Disk Management and Storage Inspection
+# 003 – Windows Disk Management
 
 ## Overview
 

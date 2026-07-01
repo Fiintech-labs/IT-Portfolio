@@ -10,12 +10,12 @@ The lab covers account verification, user creation, permission validation, and d
 
 ## Objectives
 
-- Review local Windows accounts
-- Verify username availability
-- Create a new local user
-- Verify user information
-- Validate group membership
-- Document the entire process
+- Review existing local Windows user accounts.
+- Verify that the requested username is available.
+- Create a new local Windows user account.
+- Verify the new account was created successfully.
+- Confirm the default local group membership.
+- Document all commands, outputs, screenshots, and findings.
 
 ---
 

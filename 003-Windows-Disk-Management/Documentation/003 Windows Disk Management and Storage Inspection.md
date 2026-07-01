@@ -1,10 +1,10 @@
-# Ticket #003 – Windows Disk Management and Storage Inspection
+# 003 – Windows Disk Management
 
 ## Scenario
 
-A user reports that their Windows workstation is running low on available storage space.
+A Windows workstation is reported to be running low on available storage space.
 
-The Help Desk technician is assigned to review the workstation's disk configuration, verify storage allocation, inspect the file system, assess disk health, and document the current state before recommending corrective actions.
+Before making any storage-related changes, the IT Support technician must inspect the physical disk, review the partition layout, verify available storage capacity, identify the file system, assess disk health, and document the current disk configuration.
 
 ---
 
@@ -24,7 +24,7 @@ The Help Desk technician is assigned to review the workstation's disk configurat
 - Disk Management
 - Command Prompt
 - Windows 10 Pro
-- VS Code
+- Visual Studio Code
 
 ---
 
@@ -32,39 +32,25 @@ The Help Desk technician is assigned to review the workstation's disk configurat
 
 ### Tool
 
-```text
-Computer Management
-→ Disk Management
-
-or
-
-Win + X
-→ Disk Management
-```
+Disk Management
 
 ### Purpose
 
-Review the installed physical disk, identify all partitions, and verify the current disk layout before performing any storage management tasks.
+Inspect the installed physical disk, review partition layout, and verify the current storage configuration.
 
 ### Evidence
 
 **Output File**
+
 - [01-disk-overview.txt](../Outputs/01-disk-overview.txt)
 
 **Screenshot**
-![Disk Overview](../Screenshots/01-disk-overview.png)
+
+<img src="../Screenshots/01-disk-overview.png" width="700">
 
 ### Result
 
-The workstation contains one installed physical hard disk (Disk 0) with a total capacity of approximately 465 GB.
-
-The disk is Online and contains the following partitions:
-
-- System Reserved
-- Windows (C:)
-- Recovery Partition
-
-No disk configuration issues were observed.
+Successfully reviewed the installed physical disk and verified the partition layout. The workstation contains one healthy physical disk with the required Windows partitions.
 
 ---
 
@@ -78,23 +64,25 @@ wmic logicaldisk get caption,freespace,size
 
 ### Purpose
 
-Display the total storage capacity and available free space for all logical drives.
+Determine the total storage capacity and available free space of the logical drives.
 
 ### Evidence
 
 **Output File**
+
 - [02-disk-capacity.txt](../Outputs/02-disk-capacity.txt)
 
 **Screenshot**
-![Disk Capacity](../Screenshots/02-disk-capacity.png)
+
+<img src="../Screenshots/02-disk-capacity.png" width="700">
 
 ### Result
 
-The Windows (C:) drive has sufficient available storage and its total capacity was successfully verified.
+Successfully verified the total storage capacity and available free space for the Windows partition.
 
 ---
 
-## Task 3 — Verify File System
+## Task 3 — Verify the File System
 
 ### Command
 
@@ -109,10 +97,12 @@ Identify the file system used by the Windows operating system partition.
 ### Evidence
 
 **Output File**
+
 - [03-file-system-info.txt](../Outputs/03-filesystem-info.txt)
 
 **Screenshot**
-![File System Info](../Screenshots/03-file-system-info.png)
+
+<img src="../Screenshots/03-file-system-info.png" width="700">
 
 ### Result
 
@@ -130,23 +120,25 @@ chkdsk
 
 ### Purpose
 
-Verify the integrity of the file system and detect any disk-related errors.
+Verify the integrity of the file system and detect potential disk errors.
 
 ### Evidence
 
 **Output File**
+
 - [04-disk-health.txt](../Outputs/04-disk-health.txt)
 
 **Screenshot**
-![Disk Health](../Screenshots/04-disk-health.png)
+
+<img src="../Screenshots/04-disk-health.png" width="700">
 
 ### Result
 
-Windows reported no file system errors. The disk is healthy and functioning normally.
+Successfully completed a disk health check. No file system errors or disk integrity issues were detected.
 
 ---
 
-## Task 5 — Identify the Physical Disk Hardware
+## Task 5 — Review Physical Disk Hardware
 
 ### Command
 
@@ -156,19 +148,21 @@ wmic diskdrive get model,interfacetype,mediatype,size,status
 
 ### Purpose
 
-Retrieve hardware information about the installed physical disk, including its model, interface type, media type, capacity, and operational status.
+Identify the installed physical disk hardware and verify its operational status.
 
 ### Evidence
 
 **Output File**
-[05-disk-hardware.txt](../Outputs/05-disk-hardware.txt)
+
+- [05-disk-hardware.txt](../Outputs/05-disk-hardware.txt)
 
 **Screenshot**
-![Disk Hardware](../Screenshots/05-disk-hardware.png)
+
+<img src="../Screenshots/05-disk-hardware.png" width="700">
 
 ### Result
 
-The installed physical disk was successfully identified and confirmed to be operating normally with a status of OK.
+Successfully identified the installed storage device. The physical disk status was reported as **OK**, indicating normal operation.
 
 ---
 
@@ -176,30 +170,64 @@ The installed physical disk was successfully identified and confirmed to be oper
 
 - One physical hard disk was detected.
 - The disk is online and operating normally.
-- Three partitions were identified and verified:
-  - System Reserved
-  - Windows (C:)
-  - Recovery Partition
+- The partition layout was successfully verified.
 - The Windows partition uses the NTFS file system.
-- Available storage capacity was successfully verified.
-- No disk integrity issues were detected.
+- Available storage capacity was successfully documented.
+- Disk health verification completed successfully.
+- The workstation storage configuration met the baseline requirements.
 
+---
 
 ## Lessons Learned
 
 - Learned how to inspect physical disks using Disk Management.
-- Learned how to identify disk partitions and their purpose.
-- Learned how to verify disk capacity using Command Prompt.
+- Learned how to identify Windows partitions and their purposes.
+- Learned how to verify storage capacity using Command Prompt.
 - Learned how to identify the Windows file system.
-- Learned how to perform a basic disk health check.
-- Review disk usage before expanding or creating partitions.
-- Improved Windows storage management and documentation skills.
+- Learned how to perform a basic disk health assessment.
+- Improved Windows storage management and technical documentation skills.
 
+---
 
 ## Recommendations
 
 - Monitor available disk space regularly.
 - Perform routine disk health checks.
 - Remove unnecessary files when storage becomes limited.
-- Avoid modifying partitions without proper backups.
+- Avoid modifying partitions without verified backups.
 - Document disk configurations before making storage-related changes.
+
+---
+
+## Skills Demonstrated
+
+- Windows Administration
+- Disk Management
+- Storage Management
+- NTFS File System
+- Disk Health Verification
+- Command Prompt
+- Technical Documentation
+- Markdown
+- Visual Studio Code
+
+---
+
+## Project Structure
+
+```text
+Documentation/
+Outputs/
+Screenshots/
+README.md
+```
+
+---
+
+## Project Documentation
+
+<img src="../Screenshots/06-visual-code-documentation.png" width="700">
+
+---
+
+**Project Status:** ✅ Complete

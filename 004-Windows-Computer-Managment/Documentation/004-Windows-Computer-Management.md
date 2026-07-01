@@ -2,20 +2,21 @@
 
 ## Scenario
 
-A newly deployed employee workstation needs to be reviewed before being handed over to the user. The IT Support technician must use Computer Management to inspect the system, verify local administrative tools, and ensure the workstation is properly configured.
+A newly deployed employee workstation must be reviewed before being assigned to an end user.
+
+The IT Support technician is responsible for using Computer Management to inspect the workstation, verify local administrative tools, review user accounts, inspect shared resources, verify hardware status, review Windows services, and document the workstation configuration.
 
 ---
 
 ## Objectives
 
-- Navigate the Computer Management console.
-- Review System Tools.
+- Access the Computer Management console.
+- Review Windows administrative tools.
+- Inspect Local Users and Groups.
 - Review Shared Folders.
-- Review Local Users and Groups.
-- Review Device Manager.
-- Review Disk Management.
+- Verify installed hardware.
 - Review Windows Services.
-- Document findings with screenshots and command outputs where applicable.
+- Document all commands, outputs, screenshots, and findings.
 
 ---
 
@@ -24,7 +25,7 @@ A newly deployed employee workstation needs to be reviewed before being handed o
 - Computer Management (compmgmt.msc)
 - Command Prompt
 - Windows 10 Pro
-- VS Code
+- Visual Studio Code
 
 ---
 
@@ -34,7 +35,6 @@ A newly deployed employee workstation needs to be reviewed before being handed o
 
 Computer Management (compmgmt.msc)
 
-
 ### Purpose
 
 Verify access to the Computer Management console.
@@ -43,26 +43,19 @@ Verify access to the Computer Management console.
 
 **Output File**
 
-N/A (GUI-based task)
-
+- N/A (GUI-based task)
 
 **Screenshot**
-![Computer Management Console](../Screenshots/01-Computer-management-console.png)
+
+<img src="../Screenshots/01-computer-management-console.png" width="700">
 
 ### Result
 
 Successfully accessed the Computer Management console. All administrative management categories were available without errors.
+
 ---
 
 ## Task 2 — Review System Tools
-
-### Inspect
-
-- Event Viewer
-- Shared Folders
-- Local Users and Groups
-- Performance
-- Device Manager
 
 ### Tool
 
@@ -70,17 +63,17 @@ Computer Management → System Tools
 
 ### Purpose
 
-Understand how Windows organizes administrative tools.
+Review the Windows administrative tools available within the Microsoft Management Console (MMC).
 
 ### Evidence
 
 **Output File**
 
-N/A (GUI-based task)
+- N/A (GUI-based task)
 
 **Screenshot**
 
-![Stystem Tools Overview](../Screenshots/02-system-tools-overview.png)
+<img src="../Screenshots/02-system-tools-overview.png" width="700">
 
 ### Result
 
@@ -96,36 +89,30 @@ Computer Management → Local Users and Groups
 
 ### Purpose
 
-- Verify existing local users.
-- Verify Administrators group.
-- Review built-in Windows accounts.
+Review existing local user accounts, built-in accounts, and administrator group membership.
 
 ### Evidence
 
-**Output File**
+**Output Files**
 
-* [Local User Review](../Outputs/03-local-users-review.txt)
-* [Administrators Group Review](../Outputs/03-administrators-group-review.txt)
+- [03-local-users-review.txt](../Outputs/03-local-users-review.txt)
+- [03-administrators-group-review.txt](../Outputs/03-administrators-group-review.txt)
 
-**Screenshot**
+**Screenshots**
 
-![Local User and Groups](../Screenshots/03-local-user-and-group.png)
-![Local User Review](../Screenshots/local-user-review.png)
-![Administration Groups Review](../Screenshots/admin-groups-review.png)
+<img src="../Screenshots/03-local-user-and-group.png" width="700">
+
+<img src="../Screenshots/03-local-user-review.png" width="700">
+
+<img src="../Screenshots/03-admin-groups-review.png" width="700">
 
 ### Result
 
-Successfully reviewed the Local Users and Groups console. Verified the presence of built-in local user accounts and security groups. Confirmed that the Administrators group exists and no unexpected local accounts were identified.
+Successfully reviewed local user accounts and security groups. Verified that the Administrators group exists and no unexpected local accounts were identified.
 
 ---
 
 ## Task 4 — Review Shared Folders
-
-### Identify
-
-- Shares
-- Sessions
-- Open Files
 
 ### Tool
 
@@ -134,33 +121,27 @@ Successfully reviewed the Local Users and Groups console. Verified the presence 
 
 ### Purpose
 
-Review shared folders, active sessions, and open files to verify whether resources are being shared across the local network.
+Review shared folders, active sessions, and open files to verify that no unexpected resources are being shared across the workstation.
 
 ### Evidence
 
-**Output File**
+**Output Files**
 
-- [Shared Folders](../Outputs/04-net-share.txt)
-- [Sessions](../Outputs/04-net-session.txt)
-- [Open Files](../Outputs/04-open-files.txt)
+- [04-net-share.txt](../Outputs/04-net-share.txt)
+- [04-net-session.txt](../Outputs/04-net-session.txt)
+- [04-open-files.txt](../Outputs/04-open-files.txt)
 
 **Screenshot**
 
-![Shared Folders](../Screenshots/04-shared-folders.png)
+<img src="../Screenshots/04-shared-folders.png" width="700">
 
 ### Result
 
-Reviewed local shared folders, sessions, and open files. No unexpected shared resources or active network sessions were observed.
+Reviewed shared folders, active sessions, and open files. No unexpected shared resources or active network sessions were detected.
 
 ---
 
 ## Task 5 — Review Device Manager
-
-### Check for
-
-- Unknown devices
-- Driver issues
-- Hardware status
 
 ### Tool
 
@@ -169,32 +150,25 @@ Reviewed local shared folders, sessions, and open files. No unexpected shared re
 
 ### Purpose
 
-Inspect installed hardware devices, verify driver status, and identify any hardware-related issues.
+Inspect installed hardware devices and verify that all drivers are functioning correctly.
 
 ### Evidence
 
 **Output File**
 
-- [Installed Drivers](../Outputs/05-driverquery.txt)
+- [05-driverquery.txt](../Outputs/05-driverquery.txt)
 
 **Screenshot**
 
-![Device Manager](../Screenshots/05-device-manager.png)
+<img src="../Screenshots/05-device-manager.png" width="700">
 
 ### Result
 
-Reviewed installed hardware devices using Device Manager. No unknown devices, driver errors, or hardware warning indicators were detected.
+Successfully reviewed installed hardware devices. No unknown devices, driver failures, or hardware warning indicators were detected.
 
 ---
 
 ## Task 6 — Review Windows Services
-
-### Identify examples such as:
-
-- Windows Update
-- Print Spooler
-- Windows Defender
-- DHCP Client
 
 ### Tool
 
@@ -203,62 +177,54 @@ Reviewed installed hardware devices using Device Manager. No unknown devices, dr
 
 ### Purpose
 
-Inspect essential Windows services and verify that important system services are running correctly.
+Review essential Windows services and verify that critical services are operating normally.
 
 ### Evidence
 
-**Output File**
+**Output Files**
 
-- [Windows Services](../Outputs/06-services.txt)
-- [Running Services](../Outputs/06-running-services.txt)
+- [06-services.txt](../Outputs/06-services.txt)
+- [06-running-services.txt](../Outputs/06-running-services.txt)
 
 **Screenshot**
 
-![Windows Services](../Screenshots/06-services.png)
+<img src="../Screenshots/06-services.png" width="700">
 
 ### Result
 
-Reviewed essential Windows services. Core system services including Windows Update, DHCP Client, Print Spooler, and Windows Defender were available and operating normally.
-
----
-
-## Task 7 — Document Findings
-
-### Purpose
-
-Summarize the overall workstation health after reviewing all administrative components.
-
-### Result
-
-The workstation was successfully inspected using Computer Management. Administrative tools, user accounts, shared resources, hardware devices, and Windows services were reviewed and documented. No critical configuration or operational issues were identified.
+Reviewed essential Windows services. Core services including Windows Update, DHCP Client, Print Spooler, and Microsoft Defender were operating normally.
 
 ---
 
 ## Findings
 
 - Successfully accessed the Computer Management console.
-- Verified all System Tools were available.
+- Verified all Windows administrative tools were available.
 - Reviewed local user accounts and administrator groups.
-- Confirmed no unexpected shared resources or active sessions.
+- Confirmed there were no unexpected shared resources or active sessions.
 - Verified installed hardware devices were operating normally.
 - Reviewed essential Windows services.
-- No critical workstation configuration issues were identified.
+- The workstation met the baseline administrative requirements for deployment.
+
+---
 
 ## Lessons Learned
 
-- Learned how Computer Management centralizes Windows administrative tools.
+- Learned how Microsoft Management Console (MMC) centralizes Windows administrative tools.
 - Learned how to inspect local users and administrator groups.
-- Learned how to review Windows services.
-- Learned how to identify hardware issues using Device Manager.
-- Improved familiarity with Microsoft Management Console (MMC).
-- Learned how to navigate and use the Microsoft Management Console (MMC) to administer Windows workstations.
+- Learned how to review shared resources.
+- Learned how to inspect installed hardware using Device Manager.
+- Learned how to review essential Windows services.
+- Improved Windows administration and technical documentation skills.
+
+---
 
 ## Recommendations
 
 - Periodically review Windows services.
-- Remove or disable inactive local accounts when no longer required.
-- Keep hardware drivers updated.
-- Investigate any Device Manager warning icons immediately.
+- Remove or disable inactive local accounts.
+- Keep hardware drivers up to date.
+- Investigate Device Manager warning indicators immediately.
 - Document administrative changes before deployment.
 
 ---
@@ -274,6 +240,25 @@ The workstation was successfully inspected using Computer Management. Administra
 - Hardware Troubleshooting
 - Command Prompt
 - Technical Documentation
+- Markdown
+- Visual Studio Code
+
+---
+
+## Project Structure
+
+```text
+Documentation/
+Outputs/
+Screenshots/
+README.md
+```
+
+---
+
+## Project Documentation
+
+<img src="../Screenshots/07-visual-studio-documentation.png" width="700">
 
 ---
 

@@ -2,7 +2,50 @@
 
 ## Overview
 
-Performed a Windows workstation audit using built-in Windows tools and Command Prompt.
+This project demonstrates how to perform a basic workstation audit before a computer is deployed to an end user.
+
+The audit collects essential hardware, operating system, network, and user account information for inventory, documentation, and future troubleshooting.
+
+---
+
+## Scenerio
+
+A Windows 10 workstation has been prepared for deployment.
+
+Before assigning the device to an employee, the IT Support technician must verify the workstation specifications, document the system configuration, collect network information, and record local user details.
+
+---
+
+## Objectives
+
+- Verify workstation identity.
+- Collect operating system information.
+- Document hardware specifications.
+- Review network configuration.
+- Identify local user accounts.
+- Record audit evidence using screenshots and command outputs.
+
+---
+
+## Tools Used
+
+- Windows Settings
+- Command Prompt
+- Task Manager
+- Visual Studio Code
+- Windows 10 Pro
+
+---
+
+## Command Used
+
+```cmd
+hostname
+whoami
+systeminfo
+ipconfig /all
+net user
+```
 
 ---
 
@@ -15,36 +58,34 @@ Performed a Windows workstation audit using built-in Windows tools and Command P
 
 ---
 
-## Folder Structure
 
-Documentation
+## Project Structure
 
-Outputs
+```
+001-Windows-10-System-Audit/
+│
+├── Documentation/
+├── Outputs/
+├── Screenshots/
+└── README.md
+```
+---
 
-Screenshots
+## Documentation
+
+Full project documentation is available in:
+
+`Documentation/001-Windows-10-System-Audit.md`
 
 ---
 
-# Project Preview
+## Status
 
-## Running the Audit
-
-![Running System Audit](Screenshots/01-running-systeminfo.png)
+✅ Complete
 
 ---
 
-## Project Folder Structure
+## Related Projects
 
-![Project Structure](Screenshots/02-project-structure.png)
-
----
-
-## Technical Documentation
-
-![Documentation](Screenshots/03-audit-documentation.png)
-
----
-
-## Command Output Files
-
-![Output Files](Screenshots/04-output-files.png)
+- 001 – Windows Workstation System Audit
+- 002 – Windows User Account Management *(Next Project)*
